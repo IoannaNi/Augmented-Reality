@@ -19,10 +19,25 @@
     renderer="logarithmicDepthBuffer: true;"
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+
+           style="margin : 0px; overflow: hidden;">
+        <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
+                 arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+
+
+            <a-entity id="annyang" annyang-speech-recognition></a-entity>
+            <a-entity id="switch" speech-command__start="command: start; type: attribute; attribute: visible; targetElement: #snow; value: true;"
+                      speech-command__stop="command: stop; type: attribute; attribute: visible; targetElement: #snow; value: false;">
+            </a-entity>
+            <a-entity id="snow" position="0 6 -15" particle-system="color: #ffffff"></a-entity>
+
   >
-        <a-marker preset="hiro">
-            <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #4CC3D9"></a-entity>
-        </a-marker>
+            <a-marker preset="hiro">
+                <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #99e699"></a-entity>
+                <a-entity id="cylinder" geometry="primitive: cylinder;  height: 0.4; radius: 0.2" position="-0.5 0 0" material="color: #aa80ff"></a-entity>
+                <a-entity id="sphere" geometry="primitive: sphere; radius: 0.2" position="0.5 0 0" material="color: #ff99bb"></a-entity>
+
+            </a-marker>
         <a-entity camera></a-entity>
         </a-scene>
     </body>
