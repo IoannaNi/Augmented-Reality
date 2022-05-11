@@ -13,6 +13,15 @@
     <script src="build/aframe-speech-command-component.js"></script> 
     
 
+
+
+
+
+
+
+
+
+
     <body style="margin : 0px; overflow: hidden;">
         <a-scene
                vr-mode-ui="enabled: false;"
@@ -33,7 +42,7 @@
 
   >
   
-            <a-marker preset="pattern" patternurl ="/assets/pattern-dpsd19085.patt">
+            <a-marker preset="hiro" type="pattern" url ="/assets/pattern-dpsd19085.patt">
                 
                     <a-text value=" NINOU " position="-0.5 1.4 0" color="#F31A78"></a-text>
                     <a-text value=" IOANNA " position="-0.5 1.2 0" color="#FF75B1"></a-text> 
@@ -47,6 +56,12 @@
                 <a-entity id="sphere" geometry="primitive: sphere; radius: 0.2" position="0.5 0 0" material="color: #f99bb"></a-entity>
             </a-marker>
 
+
+            <a-marker preset="hiro">
+                <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #9e699"></a-entity>
+                <a-entity id="cylinder" geometry="primitive: cylinder;  height: 0.4; radius: 0.2" position="-0.5 0 0" material="color: #a80ff"></a-entity>
+                <a-entity id="sphere" geometry="primitive: sphere; radius: 0.2" position="0.5 0 0" material="color: #f99bb"></a-entity>
+            </a-marker>
 
 
 
