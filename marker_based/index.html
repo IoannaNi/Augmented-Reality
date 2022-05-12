@@ -22,96 +22,67 @@
                 arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
                 style="margin : 0px; overflow: hidden;">
 
-
-
             <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;"
                   embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"> 
 
-                 <!--  <a-entity id="annyang" annyang-speech-recognition></a-entity> --> 
+                 
 
-
-               <!-- Ypologismos tis apostashs  -->
-               <script>
-                AFRAME.registerComponent("marker-distance", {
-     
-                    init: function () {
-                    this.hydrogen = document.querySelector('#hydrogen')
-                    this.oxygen = document.querySelector('#oxygen')
-                    this.water = document.querySelector('#water')
-                    this.hmarker = document.querySelector('#hmarker')
-                    this.omarker = document.querySelector('#omarker')
-                },
-                tick: function()
-                {
-                    var hmarkerPos, omarkerPos, markerDistance
-     
-                    hmarkerPos = new THREE.Vector3();
-                    this.hmarker.object3D.getWorldPosition(hmarkerPos);
-     
-                    omarkerPos = new THREE.Vector3();
-                    this.omarker.object3D.getWorldPosition(omarkerPos);
-     
-                    markerDistance = hmarkerPos.distanceTo(omarkerPos);
-     
-                    if (markerDistance<2)
-                    {
-                        this.hydrogen.setAttribute("visible", false)
-                        this.oxygen.setAttribute("visible", false)
-                        this.water.setAttribute("visible", true)
-                    }
-                    else
-                    {
-                        this.hydrogen.setAttribute("visible",true)
-                        this.oxygen.setAttribute("visible",true)
-                        this.water.setAttribute("visible", false)
-                    }
-                },
-            });
-           </script>
 
 
 
                                        
                   
-                                          <!-- Me to dpsd mou -->
+                             <!-- ************************************** Me to dpsd mou ******************************* -->
 
-                              <!--<a-marker id="Dpsd-19085" type="pattern" url ="/assets/pattern-dpsd19085 .patt"> -->
-                                 <a-marker preset="hiro">
-                                         <a-text value=" NINOU " position="-0.5 0.9 0" color="#F31A78"></a-text>
-                                         <a-text value=" IOANNA " position="-0.5 0.7 0" color="#FF75B1"></a-text> 
-                                          <a-text value=" Dpsd-19085 " position="-0.5 0.5 0" color="#FCB3D3"></a-text>
+                              <a-marker present="pattern" type="pattern" url ="./assets/pattern-dpsd19085 .patt"> 
+                                         <a-text value=" NINOU " position="0.5 0.9 0.8" rotation="-90 0 0" color="#F31A78"></a-text>
+                                         <a-text value=" IOANNA " position="0.5 0.6 0.6" rotation="-90 0 0" color="#FF75B1"></a-text> 
                                           <a-image src="./assets/PINK.png" width="1"  height="1" rotation="90 -180 0" position="0 0 0"> </a-image>
-                                 </a-marker>  
-                
+                             </a-marker>  
+                               <!-- **********************************************************************************-->
 
 
-                                     <!--Hdrogen 
-                                     <a-marker id="cardH" type="pattern" patternUrl ="assets/pattern-card-H.patt"> -->
-                                        <a-marker preset="hiro"> 
-                                            <!-- Einai to fig toy Hdrogen -->      
-                                              <a-assets> 
-                                                   <a-asset-item id="cardH_Model" src="./assets/H.gltf"></a-asset-item>
-                                             </a-assets>
-                                      <a-text value=" Hdrogen " position="-0.5 0.9 0" color="#F31A78"></a-text>
-            
-                                       <a-image src="./assets/card-H.png" width="1"  height="1" rotation="90 -180 0" position="0 0 0"> </a-image>
-                                     </a-marker>
+                                     
+                                      <!-- ********************* Hdrogen ***************** -->
+
+                                      <a-assets> 
+                                        <a-asset-item id="cardH_Model" src="./assets/H1.gltf"></a-asset-item>
+                                    </a-assets>
+                                     <a-marker id="cardH" type="pattern" url="assets/pattern-card-H.patt">      
+                                      <a-text value=" Hydrogen " position="0.5 0.9 0" color="#F325A78"></a-text>
+                                       <a-image src="./assets/card-H.png"  rotation="90 -180 0" position="0 0 0"> </a-image>
+                                       <a-entity position="0 1 0" rotation="0 90 0" scale="0.3 0.3 0.3"
+                                       gltf-model="#cardH_Model"
+                                       animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 360 0 0; loop: true;" >
+                                       </a-entity>
+                                     </a-marker> 
 
 
-                     <!--
-                                                  Oxygen 
-                                         <a-marker id="cardO" type="pattern" patternUrl ="/assets/pattern-card-O.patt">
-                                              <a-assets>
-                                                   <a-asset-item id="cardO_Model" src="./assets/O.gltf"></a-asset-item>
-                                                 </a-assets>
-                                         <a-text value=" Oxygen " position="-0.5 0.9 0" color="#F31A78"></a-text>
-                                         <a-image src="./assets/card-O.png" width="1"  height="1" rotation="90 -180 0" position="0 0 0"> </a-image>
-                                        </a-marker>   -->
+                     
+                                                 <!-- ********************* Oxygen ***************** -->
+
+                                                 <a-assets> 
+                                                    <a-asset-item id="cardO_Model" src="./assets/O1.gltf"></a-asset-item>
+                                                </a-assets>
+                                                 <a-marker id="cardO" type="pattern" url="/assets/pattern-card-O.patt">      
+                                                  <a-text value=" Oxygen " position="0.5 0.9 0" color="#F31A78"></a-text>
+                                                   <a-image src="./assets/card-O.png"  rotation="90 -180 0" position="0 0 0"> </a-image>
+                                                   <a-entity position="0 1 0" rotation="0 90 0" scale="0.3 0.3 0.3"
+                                                   gltf-model="#cardO_Model"
+                                                   animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 360 0 0; loop: true;" >
+                                                   </a-entity>
+                                                 </a-marker> 
 
 
 
 
-                                                    <!-- HIRO -->
+
+
+
+
+                                   <!-- HIRO -->
+
+                            <!--  <a-entity id="annyang" annyang-speech-recognition></a-entity> --> 
                                 <!-- <a-marker preset="hiro">
                                      <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #9e699"></a-entity>
                                      <a-entity id="cylinder" geometry="primitive: cylinder;  height: 0.4; radius: 0.2" position="-0.5 0 0" material="color: #a80ff"></a-entity>
