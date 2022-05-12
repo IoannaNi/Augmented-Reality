@@ -47,3 +47,6 @@ https://medium.com/chialab-open-source/build-your-location-based-augmented-reali
 
 #animation
 https://www.youtube.com/watch?v=_C2ClFO3FAY
+
+#apostasi#
+https://stackoverflow.com/questions/61239107/how-to-get-marker-position-x-y-ar-js
