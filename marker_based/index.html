@@ -25,8 +25,7 @@
 
 
             <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;"
-                  embedded
-                    arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"> 
+                  embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"> 
 
                  <!--  <a-entity id="annyang" annyang-speech-recognition></a-entity> --> 
 
@@ -45,20 +44,23 @@
                                          <a-text value=" IOANNA " position="-0.5 0.7 0" color="#FF75B1"></a-text> 
                                           <a-text value=" Dpsd-19085 " position="-0.5 0.5 0" color="#FCB3D3"></a-text>
                                           <a-image src="./assets/PINK.png" width="1"  height="1" rotation="90 -180 0" position="0 0 0"> </a-image>
-                                 </a-marker>  
+                                 </a-marker>  -->
                 
 
 
-                                     Hdrogen 
-                                     <a-marker id="cardH" type="pattern" patternUrl ="./assets/pattern-card-H.patt">
-                                                <a-assets>
+                                     <!--Hdrogen 
+                                     <a-marker id="cardH" type="pattern" patternUrl ="./assets/pattern-card-H.patt"> -->
+                                        <a-marker preset="hiro">       
+                                        <a-assets>
                                                    <a-asset-item id="cardH_Model" src="./assets/H.gltf"></a-asset-item>
                                                  </a-assets>
                                       <a-text value=" Hdrogen " position="-0.5 0.9 0" color="#F31A78"></a-text>
             
                                        <a-image src="./assets/card-H.png" width="1"  height="1" rotation="90 -180 0" position="0 0 0"> </a-image>
                                      </a-marker>
-                     
+
+
+                     <!--
                                                   Oxygen 
                                          <a-marker id="cardO" type="pattern" patternUrl ="/assets/pattern-card-O.patt">
                                               <a-assets>
