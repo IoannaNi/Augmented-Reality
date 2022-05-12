@@ -24,7 +24,7 @@
 
 
 
-             <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;"
+            <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;"
                   embedded
                     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"> 
 
@@ -33,15 +33,52 @@
 
                    <a-entity marker-distance></a-entity> <!-- arxikopoihsh -->
                               <!-- ΔΟΚΙΜΑΣΤΙΚΟ -->
-                              <a-marker preset="DPSD19085" type="pattern" url ="./assets/pattern-dpsd19085.patt">
+                              <a-marker-camera  type="pattern" url ="./assets/pattern-dpsd19085.patt">
                                    <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #9e699"></a-entity>
-                              </a-marker>
+                              </a-marker-camera>              
+                  
+                                          <!-- Me to dpsd mou -->
+
+                              <!--<a-marker id="Dpsd-19085" type="pattern" url ="/assets/pattern-dpsd19085 .patt"> 
+                                 <a-marker preset="hiro">
+                                         <a-text value=" NINOU " position="-0.5 0.9 0" color="#F31A78"></a-text>
+                                         <a-text value=" IOANNA " position="-0.5 0.7 0" color="#FF75B1"></a-text> 
+                                          <a-text value=" Dpsd-19085 " position="-0.5 0.5 0" color="#FCB3D3"></a-text>
+                                          <a-image src="./assets/PINK.png" width="1"  height="1" rotation="90 -180 0" position="0 0 0"> </a-image>
+                                 </a-marker>  
+                
 
 
-                   
+                                     Hdrogen 
+                                     <a-marker id="cardH" type="pattern" patternUrl ="./assets/pattern-card-H.patt">
+                                                <a-assets>
+                                                   <a-asset-item id="cardH_Model" src="./assets/H.gltf"></a-asset-item>
+                                                 </a-assets>
+                                      <a-text value=" Hdrogen " position="-0.5 0.9 0" color="#F31A78"></a-text>
+            
+                                       <a-image src="./assets/card-H.png" width="1"  height="1" rotation="90 -180 0" position="0 0 0"> </a-image>
+                                     </a-marker>
+                     
+                                                  Oxygen 
+                                         <a-marker id="cardO" type="pattern" patternUrl ="/assets/pattern-card-O.patt">
+                                              <a-assets>
+                                                   <a-asset-item id="cardO_Model" src="./assets/O.gltf"></a-asset-item>
+                                                 </a-assets>
+                                         <a-text value=" Oxygen " position="-0.5 0.9 0" color="#F31A78"></a-text>
+                                         <a-image src="./assets/card-O.png" width="1"  height="1" rotation="90 -180 0" position="0 0 0"> </a-image>
+                                        </a-marker>   -->
 
 
-                    <!-- -------------------------- SNOW-------------------- 
+
+
+                                                    <!-- HIRO -->
+                                <!-- <a-marker preset="hiro">
+                                     <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #9e699"></a-entity>
+                                     <a-entity id="cylinder" geometry="primitive: cylinder;  height: 0.4; radius: 0.2" position="-0.5 0 0" material="color: #a80ff"></a-entity>
+                                     <a-entity id="sphere" geometry="primitive: sphere; radius: 0.2" position="0.5 0 0" material="color: #f99bb"></a-entity>
+                                   </a-marker> -->
+
+                     <!-- -------------------------- SNOW-------------------- 
                       <a-entity id="switch" speech-command__start="command: start;
                        type: attribute; attribute: visible; targetElement: 
                         #snow; value: true;" speech-command__stop="command: stop; type: attribute; attribute: visible; targetElement: #snow; value: false;">
@@ -50,50 +87,8 @@
                             position="0 6 -15" particle-system="color: #ffffff">
                        </a-entity>
                       --------------------------------------------  -->
-  >
-  
-                      <!-- HIRO -->
-                       <!-- <a-marker preset="hiro">
-                         <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #9e699"></a-entity>
-                            <a-entity id="cylinder" geometry="primitive: cylinder;  height: 0.4; radius: 0.2" position="-0.5 0 0" material="color: #a80ff"></a-entity>
-                            <a-entity id="sphere" geometry="primitive: sphere; radius: 0.2" position="0.5 0 0" material="color: #f99bb"></a-entity>
-                         </a-marker> -->
 
-
-
-                  <!-- Me to dpsd mou -->
-
-                              <!--<a-marker id="Dpsd-19085" type="pattern" url ="/assets/pattern-dpsd19085 .patt"> 
-                                 <a-marker preset="hiro">
-                                         <a-text value=" NINOU " position="-0.5 0.9 0" color="#F31A78"></a-text>
-                                         <a-text value=" IOANNA " position="-0.5 0.7 0" color="#FF75B1"></a-text> 
-                                          <a-text value=" Dpsd-19085 " position="-0.5 0.5 0" color="#FCB3D3"></a-text>
-                                          <a-image src="./assets/PINK.png" width="1"  height="1" rotation="90 -180 0" position="0 0 0"> </a-image>
-                                 </a-marker>  -->
- 
-          <!-- ΔΟΚΙΜΑΣΤΙΚΟ
-          <a-marker preset="DPSD19085" type="pattern" url ="./assets/pattern-dpsd19085.patt">
-            <a-entity id="box" geometry="primitive: box; width: 0.2; depth: 0.2; height: 0.2" position="0 0 0" material="color: #9e699"></a-entity>
-       </a-marker>
-
-
-               Hdrogen 
-          <a-marker id="cardH" type="pattern" patternUrl ="./assets/pattern-card-H.patt">
-            <a-text value=" Hdrogen " position="-0.5 0.9 0" color="#F31A78"></a-text>
-            
-            <a-image src="./assets/card-H.png" width="1"  height="1" rotation="90 -180 0" position="0 0 0"> </a-image>
-          </a-marker>
-
-                   Oxygen 
-        <a-marker id="cardO" type="pattern" patternUrl ="/assets/pattern-card-O.patt">
-            <a-text value=" Oxygen " position="-0.5 0.9 0" color="#F31A78"></a-text>
-            <a-image src="./assets/card-O.png" width="1"  height="1" rotation="90 -180 0" position="0 0 0"> </a-image>
-       </a-marker>   -->
-
-
-
-
-        <a-entity camera></a-entity>
+             <a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
