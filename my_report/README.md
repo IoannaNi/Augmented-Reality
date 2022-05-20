@@ -23,10 +23,16 @@
 
 <h2>Αναλυτικά:</h2>
 
- 
-- Για το πρώτο σκέλος, αρχικά εφτιαξά το μαρκερ μου με το dpsd μου στην ιστοσελιδα του AR.Js ( ![2](https://user-images.githubusercontent.com/100956310/169598778-afa8f356-53aa-4779-a233-5179db0a6c9c.jpg))
+
+- Για το πρώτο σκέλος, αρχικά εφτιαξά το μαρκερ μου με το dpsd μου στην ιστοσελιδα του AR.Js 
+
+( ![2](https://user-images.githubusercontent.com/100956310/169598778-afa8f356-53aa-4779-a233-5179db0a6c9c.jpg))
+
+
  Το αποθήκευσα σε .png και .patt αρχείο και το ανέβασα στον φάκελο assets marker bases στο GitHub. Συγκέντρωσα όλα τα απαραίτητα αρχεία στο φάκελο <<assets>>, όπως τις εικόνες των patterns (dpsd, hytrogren, oxygen) την φωτογραφία που επέλεξα να εμφανίζεται με το pattern του dpsd, το αρχείο patt που είναι το pattern και το 3d σχέδιο που είναι σε αρχείο gltf. ![1](https://user-images.githubusercontent.com/100956310/169598663-78c63ff3-e538-41c9-bbf6-9507e2eaf2ec.jpg)
  Ύστερα έφτιαξα στον κώδικα το περιεχόμενο που θα εμφανίζεται με το που δει το μαρκερ,  δλδ το το ονοματεπώνυμό μου με την εντολή ( <a-text value=" NINOU ") .... Την θέση που θα πάει το κείμενο και την καταλληλη περιστροφή και τέλος το χρώμα του ( position="0.5 0.9 0.8" rotation="-90 0 0" color="#F31A78"></a-text>).Επέλεξα και κατέβασα απο το διαδίκτυο μια φωτογραφία και την εισήγαγα με την εξής εντολή: <a-image src="./assets/PINK.png" </a-image> ...  έκανα κάποιες επεξεργασίες όπως τις διαστάσεις που θα έχει, την  θέση που θα πάει η εικόνα και την κατάλληλη περιστροφή (width="1"  height="1" rotation="90 -180 0" position="0 0 0"> ). 
+ 
+ 
  ![3](https://user-images.githubusercontent.com/100956310/169598984-ff636c33-33f0-46fb-8231-382281d844ee.jpg)
 
 
@@ -59,8 +65,8 @@ https://www.npmjs.com/package/aframe-particle-system-component?fbclid=IwAR29byyS
 
 Πως να βάλω το δικο μου μαρκερ
 https://medium.com/arjs/how-to-create-your-own-marker-44becbec1105
-
-AR.js
+ 
+AR.js 
 https://ar-js-org.github.io/AR.js/three.js/examples/marker-training/examples/generator.html?fbclid=IwAR1Tt-xJdxudhhN9QcGTMJCXoq0Z0ANwpf3yueMcPnKdaG6aEM85z0j83t4
 
 Η φωτογραφία PINK
