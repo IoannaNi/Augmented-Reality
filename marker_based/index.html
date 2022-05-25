@@ -15,19 +15,28 @@
 
 
     <body style="margin : 0px; overflow: hidden;">
-       
+        <a-scene
+                vr-mode-ui="enabled: false;"
+                renderer="logarithmicDepthBuffer: true;"
+                embedded
+                arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+                style="margin : 0px; overflow: hidden;">
 
-                <!-- Ypologismos apostasis kai emfanisi nerou -->
+            <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;"
+                  embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"> 
+
                  
-      <!--     <script>
+                          <!-- Ypologismos apostasis kai emfanisi nerou -->
+                 
+           <script>
                 AFRAME.registerComponent("marker-distance", {
      
                     init: function () {
                     this.hydrogen = document.querySelector('#cardH_Model')
                     this.oxygen = document.querySelector('#cardO_Model')
-                    this.water = document.querySelector('#Water')      dilosi tis metablitis tou marker nero 
-                    this.hmarker = document.querySelector('#cardH')   dilosi tis metablitis tou marker udrogono 
-                    this.omarker = document.querySelector('#cardO')    dilosi tis metablitis tou marker oxygono 
+                    this.water = document.querySelector('#Water')    
+                    this.hmarker = document.querySelector('#cardH')  
+                    this.omarker = document.querySelector('#cardO')    
                 },
                 tick: function()
                 {
@@ -55,18 +64,9 @@
                     }
                 },
             });
-           </script> -->
-
- <a-scene
-                vr-mode-ui="enabled: false;"
-                renderer="logarithmicDepthBuffer: true;"
-                embedded
-                arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-                style="margin : 0px; overflow: hidden;">
-
-            <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;"
-                  embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"> 
-
+           </script> 
+                              
+                       
 
                                        
                   
@@ -86,10 +86,9 @@
                                       <a-assets> 
                                         <a-asset-item id="cardH_Model" src="./assets/H1.gltf"></a-asset-item>
                                     </a-assets>
-                
                                      <a-marker id="cardH" type="pattern" url="assets/pattern-card-H.patt">      
                                       <a-text value=" Hydrogen " position="0.5 0.9 0" color="#F325A78"></a-text>
-                                       <a-image id="card-H" src="./assets/card-H.png"  rotation="90 -180 0" position="0 0 0"> </a-image>
+                                       <a-image src="./assets/card-H.png"  rotation="90 -180 0" position="0 0 0"> </a-image>
                                        <a-entity position="0 1 0" rotation="0 90 0" scale="0.3 0.3 0.3"
                                        gltf-model="#cardH_Model"
                                        animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 360 0 0; loop: true;" >
@@ -103,19 +102,17 @@
                                                  <a-assets> 
                                                     <a-asset-item id="cardO_Model" src="./assets/O1.gltf"></a-asset-item>
                                                 </a-assets>
-                
                                                  <a-marker id="cardO" type="pattern" url="/assets/pattern-card-O.patt">      
                                                   <a-text value=" Oxygen " position="0.5 0.9 0" color="#F31A78"></a-text>
-                                                   <a-image id="card-O" src="./assets/card-O.png"  rotation="90 -180 0" position="0 0 0"> </a-image>
+                                                   <a-image src="./assets/card-O.png"  rotation="90 -180 0" position="0 0 0"> </a-image>
                                                    <a-entity position="0 1 0" rotation="0 90 0" scale="0.3 0.3 0.3"
                                                    gltf-model="#cardO_Model"
                                                    animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 360 0 0; loop: true;" >
                                                    </a-entity>
                                                  </a-marker> 
 
-
-                                       <!-- ********************* Water ***************** -->
-                                    <!--
+                                            <!-- ********************* Water ***************** -->
+                                    
                                       <a-assets> 
                                         <a-asset-item id="cardH2O_Model" src="./assets/water_model.gltf"></a-asset-item>
                                     </a-assets>
@@ -125,7 +122,8 @@
                                            animation__rotate = "property: rotation; dur: 5000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;"
                                      visible="false">
                                        </a-entity>
-                                     </a-marker> -->
+                                     </a-marker> 
+
 
 
 
