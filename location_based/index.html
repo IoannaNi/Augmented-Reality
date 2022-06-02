@@ -10,26 +10,55 @@
 </head>
 
 
+<script>
+AFRAME.registerComponent("text-show", {
+    init: function () {
+        let toggle = false
+        this.el.addEventListener("click", (e) => {
+            let entity = document.querySelectorAll(".clickable")
+            entity.forEach(function (el) {
+                el.setAttribute("visible", toggle)
+            })
+            toggle = !toggle
+        })
+    }
+})
+</script>
+</head>
+
 <body style='margin: 0; overflow: hidden;'>
     <a-scene
         vr-mode-ui="enabled: false"
 		embedded
 		arjs='sourceType: webcam; debugUIEnabled: false;'>
 
-        <a-box
-            material="color: red;"
-            scale="20 20 20"
-            gps-entity-place="latitude: 44.506477; longitude: 11.301524;">
-        </a-box> 
+        <a-entity id="cameraRig">
+            <a-entity id="head" camera wasd-controls look-controls cursor="rayOrigin: mouse" position="0 1 0"></a-entity>
+        </a-entity>
 
-        <a-marker-camera type='pattern' url='path/to/pattern-marker.patt'></a-marker-camera>
-     
+        <a-assets>
+            <a-asset-item id="disney" src="./assets/disney_p1.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity position="0 0 -160">
 
+            <a-entity gltf-model="#disney" scale="1 1 1" class="click" 
+                   animation__rotate="property: rotation; dur: 8000; easing: linear; dir: normal; from:0 0 0; to: 0 360 0; loop: true;"
+                    gps-entity-place="latitude: 48.867374; longitude: 2.784018;" text-show>
+
+
+                    <a-entity class="clickable"
+                          position="1 0 10"
+                          text="color: #ffffff; font-size:40; font-type: bold; align: center; value:Disneyland, Pasis ,France  ;
+                           width: 50; height: 50;  letterSpacing: 20;" visible="false">
+                        </a-entity>
+            </a-entity>
+        </a-entity>
+
+        
         <a-camera
             rotation-reader
-            gps-camera="simulateLatitude: 44.504348; simulateLongitude: 11.301027; minDistance: 1; maxDistance: 700;"
+            gps-camera="simulateLatitude:48.867374 ; simulateLongitude:2.784018 ; minDistance: 1; maxDistance: 700;"
         >
 		</a-camera>
 	</a-scene>
 </body>
-
