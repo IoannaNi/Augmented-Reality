@@ -17,8 +17,13 @@
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
 
         
-        <a-entity gps-entity-place="latitude: 44.4908615; longitude: 11.3326416;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/>
-        
+        <a-image gps-entity-place="latitude: 37.2618; longitude:  24.5450" 
+        src="assets/vaporia.png" position="0 1 -9" scale="5 5 5" rotation="0 0 0" ></a-image>
+
+  <a-camera rotation-reader
+   gps-camera="latitude: 37.2618; longitude:  24.5450; minDistance: 1; maxDistance: 700;"
+   > </a-camera>
+
        
         
         <a-camera gps-camera rotation-reader></a-camera>
