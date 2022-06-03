@@ -101,4 +101,7 @@ https://www.youtube.com/watch?v=_C2ClFO3FAY
 
 #apostasi#
 https://stackoverflow.com/questions/61239107/how-to-get-marker-position-x-y-ar-js
+ 
+ #φωτογραφία Βαπόρια
+ https://www.google.com/search?q=%CE%B2%CE%B1%CF%80%CE%BF%CF%81%CE%B9%CE%B1+%CF%83%CF%85%CF%81%CE%BF%CF%83&tbm=isch&ved=2ahUKEwjN37WImZH4AhUyOewKHZghD68Q2-cCegQIABAA&oq=%CE%B2%CE%B1%CF%80%CE%BF%CF%81%CE%B9%CE%B1+%CF%83%CF%85%CF%81%CE%BF%CF%83&gs_lcp=CgNpbWcQAzIFCAAQgAQyBQgAEIAEMgYIABAeEAUyBggAEB4QBTIGCAAQHhAFMgYIABAeEAgyBAgAEBgyBAgAEBgyBAgAEBg6BAgjECc6BggAEB4QB1DDDVjeHWCOImgAcAB4AIABeYgBqQaSAQMwLjeYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=zPKZYs3JELLysAeYw7z4Cg&bih=722&biw=1536#imgrc=UorCZn5csY9ePM
 
